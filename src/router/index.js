@@ -10,6 +10,8 @@ const addGoods = r => require.ensure([], () => r(require('@/page/addGoods')), 'a
 const shopList = r => require.ensure([], () => r(require('@/page/shopList')), 'shopList');
 const foodList = r => require.ensure([], () => r(require('@/page/foodList')), 'foodList');
 const visitor = r => require.ensure([], () => r(require('@/page/visitor')), 'visitor');
+const attentionMsgManager = r => require.ensure([], () => r(require('@/page/attentionMsgManager')), 'attentionMsgManager');
+const PublicAccountManagement = r => require.ensure([], () => r(require('@/page/PublicAccountManagement')), 'PublicAccountManagement');
 
 const routes = [
 	{
@@ -40,7 +42,15 @@ const routes = [
 			path: '/visitor',
 			component: visitor,
 			meta: ['图表', '用户分布'],
-		}]
+		},{
+            path: '/attentionMsgManager',
+            component: attentionMsgManager,
+            meta: ['微信后台管理', '关注消息管理'],
+        },{
+            path: '/PublicAccountManagement',
+            component: PublicAccountManagement,
+            meta: ['微信后台管理', '微信菜单管理'],
+        }]
 	}
 ]
 

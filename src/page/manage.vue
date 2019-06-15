@@ -9,14 +9,15 @@
 						<el-menu-item index="shopList">商家列表</el-menu-item>
 						<el-menu-item index="foodList">食品列表</el-menu-item>
 					</el-submenu>
-					<el-submenu index="3">
-						<template slot="title"><i class="el-icon-plus"></i>添加数据</template>
-						<el-menu-item index="addGoods">添加商品</el-menu-item>
-					</el-submenu>
 					<el-submenu index="4">
 						<template slot="title"><i class="el-icon-star-on"></i>图表</template>
 						<el-menu-item index="visitor">用户分布</el-menu-item>
 					</el-submenu>
+                    <el-submenu index="5">
+                        <template slot="title"><i class="el-icon-document"></i>微信后台管理</template>
+                        <el-menu-item index="attentionMsgManager">关注消息管理</el-menu-item>
+                        <el-menu-item index="PublicAccountManagement">微信菜单管理</el-menu-item>
+                    </el-submenu>
 				</el-menu>
 			</el-col>
 			<el-col :span="20" style="height: 100%;overflow: auto;">
